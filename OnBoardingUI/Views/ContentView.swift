@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var currentPageIndex = 0
+    var pages = OnBoards.generate
+    
     var body: some View {
-        Text("Hello, world!").padding()
+        VStack {
+            OnBoardingViewContainer(
+                viewControllers: pages.map({  UIHostingController(rootView: OnBoardingSubView(board: $0) )  }), currentPage: self.currentPageIndex)
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

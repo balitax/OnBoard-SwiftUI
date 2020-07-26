@@ -2,7 +2,7 @@
 //  OnBoardingUITests.swift
 //  OnBoardingUITests
 //
-//  Created by Agus RoomMe on 25/07/20.
+//  Created by Agus Cahyono on 25/07/20.
 //
 
 import XCTest

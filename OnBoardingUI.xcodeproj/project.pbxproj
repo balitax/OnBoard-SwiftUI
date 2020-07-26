@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		269766E224CC9F820055BDB6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269766E024CC9F820055BDB6 /* PageViewController.swift */; };
+		269766E624CC9FF60055BDB6 /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269766E524CC9FF60055BDB6 /* PageIndicator.swift */; };
+		269766E924CCA08E0055BDB6 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269766E824CCA08E0055BDB6 /* Color+Extensions.swift */; };
+		269766EB24CCA1A50055BDB6 /* OnBoardingSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269766EA24CCA1A50055BDB6 /* OnBoardingSubView.swift */; };
+		269766ED24CCA1DA0055BDB6 /* OnBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269766EC24CCA1DA0055BDB6 /* OnBoards.swift */; };
+		269766EF24CCA3230055BDB6 /* OnBoardingViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269766EE24CCA3230055BDB6 /* OnBoardingViewContainer.swift */; };
+		269766F124CCA5CF0055BDB6 /* BottomOnBoardNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269766F024CCA5CF0055BDB6 /* BottomOnBoardNavigator.swift */; };
 		26E02CD324CC4085002FB4FC /* OnBoardingUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E02CD224CC4085002FB4FC /* OnBoardingUIApp.swift */; };
 		26E02CD524CC4085002FB4FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E02CD424CC4085002FB4FC /* ContentView.swift */; };
 		26E02CD724CC4086002FB4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E02CD624CC4086002FB4FC /* Assets.xcassets */; };
@@ -33,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		269766E024CC9F820055BDB6 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		269766E524CC9FF60055BDB6 /* PageIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
+		269766E824CCA08E0055BDB6 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		269766EA24CCA1A50055BDB6 /* OnBoardingSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSubView.swift; sourceTree = "<group>"; };
+		269766EC24CCA1DA0055BDB6 /* OnBoards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoards.swift; sourceTree = "<group>"; };
+		269766EE24CCA3230055BDB6 /* OnBoardingViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewContainer.swift; sourceTree = "<group>"; };
+		269766F024CCA5CF0055BDB6 /* BottomOnBoardNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomOnBoardNavigator.swift; sourceTree = "<group>"; };
 		26E02CCF24CC4085002FB4FC /* OnBoardingUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnBoardingUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E02CD224CC4085002FB4FC /* OnBoardingUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingUIApp.swift; sourceTree = "<group>"; };
 		26E02CD424CC4085002FB4FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +86,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		269766E324CC9FCC0055BDB6 /* UIViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				269766E024CC9F820055BDB6 /* PageViewController.swift */,
+			);
+			path = UIViewRepresentable;
+			sourceTree = "<group>";
+		};
+		269766E424CC9FE00055BDB6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				269766F224CCA7D30055BDB6 /* SubView */,
+				269766EC24CCA1DA0055BDB6 /* OnBoards.swift */,
+				26E02CD424CC4085002FB4FC /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		269766E724CCA0810055BDB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				269766E824CCA08E0055BDB6 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		269766F224CCA7D30055BDB6 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				269766F024CCA5CF0055BDB6 /* BottomOnBoardNavigator.swift */,
+				269766EE24CCA3230055BDB6 /* OnBoardingViewContainer.swift */,
+				269766EA24CCA1A50055BDB6 /* OnBoardingSubView.swift */,
+				269766E524CC9FF60055BDB6 /* PageIndicator.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
 		26E02CC624CC4084002FB4FC = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +146,10 @@
 		26E02CD124CC4085002FB4FC /* OnBoardingUI */ = {
 			isa = PBXGroup;
 			children = (
+				269766E724CCA0810055BDB6 /* Extensions */,
+				269766E424CC9FE00055BDB6 /* Views */,
+				269766E324CC9FCC0055BDB6 /* UIViewRepresentable */,
 				26E02CD224CC4085002FB4FC /* OnBoardingUIApp.swift */,
-				26E02CD424CC4085002FB4FC /* ContentView.swift */,
 				26E02CD624CC4086002FB4FC /* Assets.xcassets */,
 				26E02CDB24CC4086002FB4FC /* Info.plist */,
 				26E02CD824CC4086002FB4FC /* Preview Content */,
@@ -260,7 +313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				26E02CD524CC4085002FB4FC /* ContentView.swift in Sources */,
+				269766ED24CCA1DA0055BDB6 /* OnBoards.swift in Sources */,
 				26E02CD324CC4085002FB4FC /* OnBoardingUIApp.swift in Sources */,
+				269766EB24CCA1A50055BDB6 /* OnBoardingSubView.swift in Sources */,
+				269766EF24CCA3230055BDB6 /* OnBoardingViewContainer.swift in Sources */,
+				269766E624CC9FF60055BDB6 /* PageIndicator.swift in Sources */,
+				269766E224CC9F820055BDB6 /* PageViewController.swift in Sources */,
+				269766F124CCA5CF0055BDB6 /* BottomOnBoardNavigator.swift in Sources */,
+				269766E924CCA08E0055BDB6 /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

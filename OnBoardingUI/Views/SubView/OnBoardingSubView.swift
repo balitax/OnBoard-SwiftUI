@@ -13,6 +13,7 @@ struct OnBoardingSubView: View {
     
     var body: some View {
         VStack {
+            
             Image(board.image)
                 .resizable()
                 .frame(width: 298, height: 240)
@@ -33,6 +34,7 @@ struct OnBoardingSubView: View {
                     .multilineTextAlignment(.leading)
                     .lineSpacing(8)
                     .padding(.top, 16)
+                
             }.padding(.horizontal)
         }
         .padding(.top, 100)
